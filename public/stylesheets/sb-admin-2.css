@@ -558,6 +558,15 @@ pre code {
   margin-left: auto;
 }
 
+/* .containerregis {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 150px;
+} */
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
