@@ -63,7 +63,11 @@ module.exports = function (db) {
   });
 
   router.get('/home', helpers.isLoggedIn,function (req, res, next) {
-    res.render('index');
+    res.render('index', {user: req.session.user});
+  });
+
+  router.get('/users', helpers.isLoggedIn,function (req, res, next) {
+    res.render('users', {user: req.session.user});
   });
 
   return router;
